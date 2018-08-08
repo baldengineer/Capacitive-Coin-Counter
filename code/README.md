@@ -1,0 +1,3 @@
+arduino> contains all of the code to control the coin acceptor and oled. Bank's value is stored in the Arduino's EEPROM.
+
+MSP430> Contains the code for a MSP430FR2633 development board. It turns on the PowerBoost which turns on the Arduino. It uses capacitive sensing to turn-on and for the "reset bank" signal. It wakes up every 100ms to check for a touch. It keeps the arduino on for 10-12 seconds after it detects the last proximity.

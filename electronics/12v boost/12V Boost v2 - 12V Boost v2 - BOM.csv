@@ -1,0 +1,9 @@
+Ref,Qnty,Value,Cmp name,Description,Vendor
+"C1, C2, ",2,10u,C,Unpolarized capacitor,
+"D1, ",1,MBR0540,D_Schottky,Schottky diode,
+"D2, ",1,PWR,LED,LED generic,
+"L1, ",1,4.7u,L,Inductor,
+"R2, ",1,1.05M,R,Resistor,
+"R3, ",1,120k,R,Resistor,
+"R4, ",1,1k,R,Resistor,
+"U1, ",1,MCP1661,MCP1661,,

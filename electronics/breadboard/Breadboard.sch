@@ -1,0 +1,306 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L device:Q_NPN_EBC Q?
+U 1 1 5B6A8739
+P 3750 4100
+F 0 "Q?" H 3941 4146 50  0000 L CNN
+F 1 "Q_NPN_EBC" H 3941 4055 50  0000 L CNN
+F 2 "" H 3950 4200 50  0001 C CNN
+F 3 "" H 3750 4100 50  0001 C CNN
+	1    3750 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Q_PNP_EBC Q?
+U 1 1 5B6A8828
+P 4650 3900
+F 0 "Q?" H 4841 3854 50  0000 L CNN
+F 1 "Q_PNP_EBC" H 4841 3945 50  0000 L CNN
+F 2 "" H 4850 4000 50  0001 C CNN
+F 3 "" H 4650 3900 50  0001 C CNN
+	1    4650 3900
+	1    0    0    1   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5B6A88A6
+P 3850 4450
+F 0 "R?" H 3920 4496 50  0000 L CNN
+F 1 "1K" H 3920 4405 50  0000 L CNN
+F 2 "" V 3780 4450 50  0001 C CNN
+F 3 "" H 3850 4450 50  0001 C CNN
+	1    3850 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B6A8AED
+P 3850 4600
+F 0 "#PWR?" H 3850 4350 50  0001 C CNN
+F 1 "GND" H 3855 4427 50  0000 C CNN
+F 2 "" H 3850 4600 50  0001 C CNN
+F 3 "" H 3850 4600 50  0001 C CNN
+	1    3850 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4100 4750 4300
+Wire Wire Line
+	4750 4300 5250 4300
+Text Label 5250 4300 2    50   ~ 0
+Acceptor
+$Comp
+L power:+12V #PWR?
+U 1 1 5B6A8B82
+P 4750 3550
+F 0 "#PWR?" H 4750 3400 50  0001 C CNN
+F 1 "+12V" H 4765 3723 50  0000 C CNN
+F 2 "" H 4750 3550 50  0001 C CNN
+F 3 "" H 4750 3550 50  0001 C CNN
+	1    4750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3550 4750 3700
+$Comp
+L power:+12V #PWR?
+U 1 1 5B6A8C8C
+P 3850 3550
+F 0 "#PWR?" H 3850 3400 50  0001 C CNN
+F 1 "+12V" H 3865 3723 50  0000 C CNN
+F 2 "" H 3850 3550 50  0001 C CNN
+F 3 "" H 3850 3550 50  0001 C CNN
+	1    3850 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5B6A8DA6
+P 3850 3700
+F 0 "R?" H 3920 3746 50  0000 L CNN
+F 1 "1K" H 3920 3655 50  0000 L CNN
+F 2 "" V 3780 3700 50  0001 C CNN
+F 3 "" H 3850 3700 50  0001 C CNN
+	1    3850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3850 3850 3900
+Connection ~ 3850 3900
+Text Label 3250 4100 0    50   ~ 0
+A1
+Wire Wire Line
+	3850 3900 4450 3900
+Wire Wire Line
+	3550 4100 3250 4100
+Text Notes 3750 3250 0    50   ~ 0
+Acceptor 12V Power Control
+$Comp
+L power:+12V #PWR?
+U 1 1 5B6A8FA4
+P 1900 3650
+F 0 "#PWR?" H 1900 3500 50  0001 C CNN
+F 1 "+12V" H 1915 3823 50  0000 C CNN
+F 2 "" H 1900 3650 50  0001 C CNN
+F 3 "" H 1900 3650 50  0001 C CNN
+	1    1900 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B6A8FB7
+P 1900 4150
+F 0 "#PWR?" H 1900 3900 50  0001 C CNN
+F 1 "GND" H 1905 3977 50  0000 C CNN
+F 2 "" H 1900 4150 50  0001 C CNN
+F 3 "" H 1900 4150 50  0001 C CNN
+	1    1900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:CP C?
+U 1 1 5B6A905C
+P 1450 3900
+F 0 "C?" H 1568 3946 50  0000 L CNN
+F 1 "470u" H 1568 3855 50  0000 L CNN
+F 2 "" H 1488 3750 50  0001 C CNN
+F 3 "" H 1450 3900 50  0001 C CNN
+	1    1450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:CP C?
+U 1 1 5B6A90D4
+P 1900 3900
+F 0 "C?" H 2018 3946 50  0000 L CNN
+F 1 "470u" H 2018 3855 50  0000 L CNN
+F 2 "" H 1938 3750 50  0001 C CNN
+F 3 "" H 1900 3900 50  0001 C CNN
+	1    1900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:CP C?
+U 1 1 5B6A90F3
+P 2350 3900
+F 0 "C?" H 2468 3946 50  0000 L CNN
+F 1 "470u" H 2468 3855 50  0000 L CNN
+F 2 "" H 2388 3750 50  0001 C CNN
+F 3 "" H 2350 3900 50  0001 C CNN
+	1    2350 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3750 1450 3650
+Wire Wire Line
+	1450 3650 1900 3650
+Wire Wire Line
+	1900 3650 1900 3750
+Connection ~ 1900 3650
+Wire Wire Line
+	2350 3750 2350 3650
+Wire Wire Line
+	2350 3650 1900 3650
+Wire Wire Line
+	1450 4150 1900 4150
+Wire Wire Line
+	1450 4050 1450 4150
+Wire Wire Line
+	1900 4050 1900 4150
+Connection ~ 1900 4150
+Wire Wire Line
+	2350 4050 2350 4150
+Wire Wire Line
+	2350 4150 1900 4150
+$Comp
+L device:Q_NPN_EBC Q?
+U 1 1 5B6A97FF
+P 3700 5650
+F 0 "Q?" H 3891 5696 50  0000 L CNN
+F 1 "Q_NPN_EBC" H 3891 5605 50  0000 L CNN
+F 2 "" H 3900 5750 50  0001 C CNN
+F 3 "" H 3700 5650 50  0001 C CNN
+	1    3700 5650
+	1    0    0    -1  
+$EndComp
+Text Label 3800 5350 0    50   ~ 0
+LiPo
+Text Label 4050 5950 2    50   ~ 0
+A3
+Wire Wire Line
+	3800 5850 3800 5950
+Wire Wire Line
+	3800 5950 4050 5950
+Wire Wire Line
+	3800 5450 3800 5350
+Text Label 3300 5650 0    50   ~ 0
+D4
+Wire Wire Line
+	3500 5650 3300 5650
+Text Notes 1650 3300 0    50   ~ 0
+12V Decoupling
+Text Notes 3550 5200 0    50   ~ 0
+Battery Sampler
+$Comp
+L device:D_Schottky D?
+U 1 1 5B6A9FE7
+P 4950 5650
+F 0 "D?" V 4996 5571 50  0000 R CNN
+F 1 "D_Schottky" V 4905 5571 50  0000 R CNN
+F 2 "" H 4950 5650 50  0001 C CNN
+F 3 "" H 4950 5650 50  0001 C CNN
+	1    4950 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 5500 4950 5350
+Text Label 4950 5350 0    50   ~ 0
+LiPo
+Wire Wire Line
+	4950 5800 4950 5950
+Text Label 5350 5950 2    50   ~ 0
+MSP430
+Wire Wire Line
+	4950 5950 5350 5950
+$Comp
+L freetronics_schematic:M07 JP?
+U 1 1 5B6AA985
+P 1300 5700
+F 0 "JP?" H 1119 4879 50  0000 C CNN
+F 1 "M07" H 1119 4963 40  0000 C CNN
+F 2 "" H 1300 5700 60  0000 C CNN
+F 3 "" H 1300 5700 60  0000 C CNN
+	1    1300 5700
+	-1   0    0    1   
+$EndComp
+Text Label 1900 5100 2    50   ~ 0
+MI
+Text Label 1900 5200 2    50   ~ 0
+SCK
+Text Label 1900 5300 2    50   ~ 0
+MO
+Text Label 1900 5400 2    50   ~ 0
+5V-ISP
+Text Label 1900 5600 2    50   ~ 0
+TX
+Text Label 1900 5700 2    50   ~ 0
+RX
+$Comp
+L freetronics_schematic:M02 JP?
+U 1 1 5B6AC7CD
+P 2550 5400
+F 0 "JP?" H 2528 5378 50  0000 L CNN
+F 1 "M02" H 2528 5294 40  0000 L CNN
+F 2 "" H 2550 5400 60  0000 C CNN
+F 3 "" H 2550 5400 60  0000 C CNN
+	1    2550 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5100 1900 5100
+Wire Wire Line
+	1600 5200 1900 5200
+Wire Wire Line
+	1600 5300 1900 5300
+Wire Wire Line
+	1600 5500 1900 5500
+Wire Wire Line
+	1600 5600 1900 5600
+Wire Wire Line
+	1600 5700 1900 5700
+Wire Wire Line
+	1600 5400 2250 5400
+Wire Wire Line
+	2250 5500 2100 5500
+$Comp
+L power:+5V #PWR?
+U 1 1 5B6AED60
+P 2100 5500
+F 0 "#PWR?" H 2100 5350 50  0001 C CNN
+F 1 "+5V" H 2115 5673 50  0000 C CNN
+F 2 "" H 2100 5500 50  0001 C CNN
+F 3 "" H 2100 5500 50  0001 C CNN
+	1    2100 5500
+	-1   0    0    1   
+$EndComp
+Text Notes 1450 5950 0    50   ~ 0
+ICSP, UART, and 5V Select
+Text Notes 4750 5200 0    50   ~ 0
+MCU Stepdown
+Text Notes 1700 4900 0    50   ~ 0
+Header Pins
+$EndSCHEMATC

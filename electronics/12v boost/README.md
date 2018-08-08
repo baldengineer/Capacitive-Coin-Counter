@@ -1,0 +1,1 @@
+A ~3V to 12V or 24V boost converter. The resistors listed in the BOM are for 12V. Change the R3 to 56K to get 24V out. Regulator can handle about 50 mA continous and peaks up to 500 mA. Based on the Microchip MCP1661. You can order the board from OSHPark: https://oshpark.com/shared_projects/hU1dj3Ux

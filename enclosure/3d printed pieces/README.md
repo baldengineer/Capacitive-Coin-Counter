@@ -1,0 +1,1 @@
+You need two of each of these slides. The Bottom are slightly wider to be more forgiving, especially as the draw gets heavier. 
